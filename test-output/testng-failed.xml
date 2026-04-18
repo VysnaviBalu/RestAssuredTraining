@@ -5,7 +5,11 @@
     <classes>
       <class name="day1.HTTPResponse">
         <methods>
+          <include name="getAllUserDetails"/>
+          <include name="getUser"/>
           <include name="createUser"/>
+          <include name="putUser"/>
+          <include name="deleteUser"/>
         </methods>
       </class> <!-- day1.HTTPResponse -->
     </classes>

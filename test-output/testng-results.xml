@@ -1,29 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-18T14:19:18 IST" name="Default suite" finished-at="2026-04-18T14:19:27 IST" duration-ms="9261">
+  <suite started-at="2026-04-18T18:56:59 IST" name="Default suite" finished-at="2026-04-18T18:57:10 IST" duration-ms="11361">
     <groups>
     </groups>
-    <test started-at="2026-04-18T14:19:18 IST" name="Default test" finished-at="2026-04-18T14:19:27 IST" duration-ms="9261">
-      <class name="day1.HTTPResponse">
-        <test-method signature="createUser()[pri:0, instance:day1.HTTPResponse@6e20b53a]" started-at="2026-04-18T14:19:18 IST" name="createUser" finished-at="2026-04-18T14:19:24 IST" duration-ms="6032" status="PASS">
+    <test started-at="2026-04-18T18:56:59 IST" name="Default test" finished-at="2026-04-18T18:57:10 IST" duration-ms="11361">
+      <class name="day1.DataDrivenTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:day1.DataDrivenTest@31304f14]" started-at="2026-04-18T18:56:59 IST" name="setup" finished-at="2026-04-18T18:57:01 IST" duration-ms="1872" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createUser -->
-        <test-method signature="deleteUser()[pri:0, instance:day1.HTTPResponse@6e20b53a]" started-at="2026-04-18T14:19:24 IST" name="deleteUser" finished-at="2026-04-18T14:19:24 IST" duration-ms="626" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="createPostFromCSV(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:day1.DataDrivenTest@31304f14]" started-at="2026-04-18T18:57:01 IST" name="createPostFromCSV" data-provider="postData" finished-at="2026-04-18T18:57:08 IST" duration-ms="7585" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Awesomeness]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Learning RestAssured]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deleteUser -->
-        <test-method signature="getUser()[pri:0, instance:day1.HTTPResponse@6e20b53a]" started-at="2026-04-18T14:19:25 IST" name="getUser" finished-at="2026-04-18T14:19:26 IST" duration-ms="1582" status="PASS">
+        </test-method> <!-- createPostFromCSV -->
+        <test-method signature="createPostFromCSV(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:day1.DataDrivenTest@31304f14]" started-at="2026-04-18T18:57:08 IST" name="createPostFromCSV" data-provider="postData" finished-at="2026-04-18T18:57:09 IST" duration-ms="656" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[AwesomeME]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Learning To Code]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getUser -->
-        <test-method signature="putUser()[pri:0, instance:day1.HTTPResponse@6e20b53a]" started-at="2026-04-18T14:19:26 IST" name="putUser" finished-at="2026-04-18T14:19:27 IST" duration-ms="850" status="PASS">
+        </test-method> <!-- createPostFromCSV -->
+        <test-method signature="createPostFromCSV(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:day1.DataDrivenTest@31304f14]" started-at="2026-04-18T18:57:09 IST" name="createPostFromCSV" data-provider="postData" finished-at="2026-04-18T18:57:10 IST" duration-ms="1012" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SuperTest]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[API Testing Rocks]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- putUser -->
-      </class> <!-- day1.HTTPResponse -->
+        </test-method> <!-- createPostFromCSV -->
+      </class> <!-- day1.DataDrivenTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
