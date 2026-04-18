@@ -22,7 +22,7 @@ import io.restassured.response.Response;
 public class HTTPResponse extends BaseTest {
 	
 	// ─── GET ────────────────────────────────────────
-	@Test
+	@Test (priority = 1)
 	void getUser() {
 		
 		when()
@@ -36,7 +36,7 @@ public class HTTPResponse extends BaseTest {
 	
 	
 	// ─── POST ───────────────────────────────────────
-	@Test
+	@Test (priority = 2)
 	void createUser() {
 		
 		given()
@@ -55,7 +55,7 @@ public class HTTPResponse extends BaseTest {
 	
 	
 	// ─── PUT ────────────────────────────────────────
-	@Test
+	@Test(priority = 3, dependsOnMethods = {"createUser"})
 	void putUser() {	
 		
 		given()
@@ -72,7 +72,7 @@ public class HTTPResponse extends BaseTest {
 	}
 	
 	// ─── DELETE ─────────────────────────────────────
-	@Test
+	@Test(priority = 4, dependsOnMethods = {"createUser","putUser"})
 	void deleteUser() {
 		given()
 		
