@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="day1.PostDataDrivenTest">
+      <class name="day2.DiffWaysToCreatePostBodyRequest">
         <methods>
-          <include name="createPostFromCSV" invocation-numbers="0 1 2"/>
+          <include name="deleteUser"/>
           <include name="setup"/>
+          <include name="testPostUsingHashMap"/>
         </methods>
-      </class> <!-- day1.PostDataDrivenTest -->
+      </class> <!-- day2.DiffWaysToCreatePostBodyRequest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

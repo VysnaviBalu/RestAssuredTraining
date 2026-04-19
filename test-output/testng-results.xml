@@ -1,80 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-18T20:06:20 IST" name="Default suite" finished-at="2026-04-18T20:06:31 IST" duration-ms="11155">
+  <suite started-at="2026-04-19T15:48:52 IST" name="Default suite" finished-at="2026-04-19T15:49:02 IST" duration-ms="9066">
     <groups>
     </groups>
-    <test started-at="2026-04-18T20:06:20 IST" name="Default test" finished-at="2026-04-18T20:06:31 IST" duration-ms="11155">
-      <class name="day1.PostDataDrivenTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:day1.PostDataDrivenTest@31304f14]" started-at="2026-04-18T20:06:20 IST" name="setup" finished-at="2026-04-18T20:06:22 IST" duration-ms="1440" status="PASS">
+    <test started-at="2026-04-19T15:48:52 IST" name="Default test" finished-at="2026-04-19T15:49:02 IST" duration-ms="9066">
+      <class name="day2.DiffWaysToCreatePostBodyRequest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:day2.DiffWaysToCreatePostBodyRequest@9597028]" started-at="2026-04-19T15:48:53 IST" name="setup" finished-at="2026-04-19T15:48:54 IST" duration-ms="1934" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="createPostFromCSV(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:day1.PostDataDrivenTest@31304f14]" started-at="2026-04-18T20:06:22 IST" name="createPostFromCSV" data-provider="postData" finished-at="2026-04-18T20:06:29 IST" duration-ms="6904" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Awesomeness]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Learning RestAssured]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="testPostUsingHashMap()[pri:2, instance:day2.DiffWaysToCreatePostBodyRequest@9597028]" started-at="2026-04-19T15:48:54 IST" name="testPostUsingHashMap" finished-at="2026-04-19T15:49:01 IST" duration-ms="7009" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createPostFromCSV -->
-        <test-method signature="createPostFromCSV(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:day1.PostDataDrivenTest@31304f14]" started-at="2026-04-18T20:06:29 IST" name="createPostFromCSV" data-provider="postData" finished-at="2026-04-18T20:06:31 IST" duration-ms="1886" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[AwesomeME]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Learning To Code]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createPostFromCSV -->
-        <test-method signature="createPostFromCSV(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:day1.PostDataDrivenTest@31304f14]" started-at="2026-04-18T20:06:31 IST" name="createPostFromCSV" data-provider="postData" finished-at="2026-04-18T20:06:31 IST" duration-ms="750" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[SuperTest]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[API Testing Rocks]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createPostFromCSV -->
-      </class> <!-- day1.PostDataDrivenTest -->
+        </test-method> <!-- testPostUsingHashMap -->
+      </class> <!-- day2.DiffWaysToCreatePostBodyRequest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

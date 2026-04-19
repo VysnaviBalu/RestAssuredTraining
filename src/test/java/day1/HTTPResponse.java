@@ -66,7 +66,7 @@ public class HTTPResponse extends BaseTest {
 		 .put("/posts/1")
 		 
 		.then()
-		 .statusCode(200)
+		 .statusCode(201)
 		 .log().all();
 		
 	}
