@@ -22,8 +22,8 @@ import java.util.ArrayList;
 
 public class DiffWaysToCreatePostBodyRequest extends BaseTest {
 	
-	
-	@Test(priority=2)
+	String idValue;
+	@Test(priority=1)
 	public void testPostUsingHashMap() {
 	
 	HashMap<String, Object> data = new HashMap<>();
@@ -39,7 +39,7 @@ public class DiffWaysToCreatePostBodyRequest extends BaseTest {
 	
 	System.out.println(data);
 	
-	given()
+	idValue = given()
 	 .contentType(ContentType.JSON)
 	 .body(data)
 	.when()
@@ -51,21 +51,25 @@ public class DiffWaysToCreatePostBodyRequest extends BaseTest {
 	 .body("phone",equalTo("8765243109"))
 	 .body("courses[0]",equalTo("C"))
 	 .body("courses[1]",equalTo("F1"))
-	 .log().all();
+	 .extract()
+	 .jsonPath().getString("id");
+	
+	System.out.println(idValue);
 	
 	}
 	
 	
-//	// ─── DELETE ─────────────────────────────────────
-//		@Test (priority=1)
-//		void deleteUser() {
-//			given()
-//			
-//			.when()
-//			 .delete("/students/dBs1kMlqWWc")
-//			 
-//			.then()
-//			 .statusCode(200);
-//		}
+	
+	// ─── DELETE ─────────────────────────────────────
+		@Test (priority=2)
+		void deleteUser() {
+			given()
+			
+			.when()
+			 .delete("/students/"+idValue)
+			 
+			.then()
+			 .statusCode(200);
+		}
 
 }

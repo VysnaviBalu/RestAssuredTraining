@@ -7,7 +7,6 @@
         <methods>
           <include name="deleteUser"/>
           <include name="setup"/>
-          <include name="testPostUsingHashMap"/>
         </methods>
       </class> <!-- day2.DiffWaysToCreatePostBodyRequest -->
     </classes>
