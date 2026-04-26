@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-23T14:49:59 IST" name="Default suite" finished-at="2026-04-23T14:50:02 IST" duration-ms="2537">
+  <suite started-at="2026-04-27T01:19:30 IST" name="Default suite" finished-at="2026-04-27T01:19:35 IST" duration-ms="4999">
     <groups>
     </groups>
-    <test started-at="2026-04-23T14:49:59 IST" name="Default test" finished-at="2026-04-23T14:50:02 IST" duration-ms="2537">
-      <class name="day2.DiffWaysToCreatePostBodyRequest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:day2.DiffWaysToCreatePostBodyRequest@67c27493]" started-at="2026-04-23T14:49:59 IST" name="setup" finished-at="2026-04-23T14:50:00 IST" duration-ms="513" status="PASS">
+    <test started-at="2026-04-27T01:19:30 IST" name="Default test" finished-at="2026-04-27T01:19:35 IST" duration-ms="4999">
+      <class name="day3.PathAndQueryParameters">
+        <test-method is-config="true" signature="setup()[pri:0, instance:day3.PathAndQueryParameters@4efbca5a]" started-at="2026-04-27T01:19:30 IST" name="setup" finished-at="2026-04-27T01:19:31 IST" duration-ms="1090" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="cleanupJunkEntries()[pri:0, instance:day2.DiffWaysToCreatePostBodyRequest@67c27493]" started-at="2026-04-23T14:50:00 IST" name="cleanupJunkEntries" finished-at="2026-04-23T14:50:02 IST" duration-ms="1945" status="PASS">
+        <test-method signature="testUsingPathAndQueryParameters()[pri:0, instance:day3.PathAndQueryParameters@4efbca5a]" started-at="2026-04-27T01:19:31 IST" name="testUsingPathAndQueryParameters" finished-at="2026-04-27T01:19:35 IST" duration-ms="3801" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- cleanupJunkEntries -->
-      </class> <!-- day2.DiffWaysToCreatePostBodyRequest -->
+        </test-method> <!-- testUsingPathAndQueryParameters -->
+      </class> <!-- day3.PathAndQueryParameters -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
