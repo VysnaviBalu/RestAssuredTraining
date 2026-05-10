@@ -45,9 +45,9 @@ public class ValidateParsedResponseBody extends BaseTest{
 				System.out.println(category);
 				for(int i = 0; i< js.getJSONArray(category).length();i++) {
 					 bookTitle = js.getJSONArray(category).getJSONObject(i).getString("title");
-					if(bookTitle.equalsIgnoreCase("Harry Potter")){
+					if(bookTitle.equalsIgnoreCase("Sayings of the Century")){
 						findBook = true;
-						System.out.println("Harry Potter is present in the list");
+						System.out.println("Sayings of the Centuryis present in the list");
 						break;
 						
 					}
@@ -55,6 +55,7 @@ public class ValidateParsedResponseBody extends BaseTest{
 				}
 			}
 		}
+		Assert.assertTrue(findBook, "Sayings of the Century not found in book list!");
 		
 	}
 
