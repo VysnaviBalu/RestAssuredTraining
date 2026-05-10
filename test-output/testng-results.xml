@@ -1,37 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-27T21:55:00 IST" name="Default suite" finished-at="2026-04-27T21:55:05 IST" duration-ms="5334">
+  <suite started-at="2026-05-10T20:26:59 IST" name="Default suite" finished-at="2026-05-10T20:27:13 IST" duration-ms="13945">
     <groups>
     </groups>
-    <test started-at="2026-04-27T21:55:00 IST" name="Default test" finished-at="2026-04-27T21:55:05 IST" duration-ms="5334">
-      <class name="day3.LoggingDemo">
-        <test-method is-config="true" signature="setup()[pri:0, instance:day3.LoggingDemo@67c27493]" started-at="2026-04-27T21:55:00 IST" name="setup" finished-at="2026-04-27T21:55:01 IST" duration-ms="1301" status="PASS">
+    <test started-at="2026-05-10T20:26:59 IST" name="Default test" finished-at="2026-05-10T20:27:13 IST" duration-ms="13945">
+      <class name="day4.ValidateParsedResponseBody">
+        <test-method is-config="true" signature="setup()[pri:0, instance:day4.ValidateParsedResponseBody@6069db50]" started-at="2026-05-10T20:26:59 IST" name="setup" finished-at="2026-05-10T20:27:01 IST" duration-ms="2466" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testLogsStatusCode()[pri:1, instance:day3.LoggingDemo@67c27493]" started-at="2026-04-27T21:55:01 IST" name="testLogsStatusCode" finished-at="2026-04-27T21:55:04 IST" duration-ms="2413" status="PASS">
+        <test-method signature="testJsonObjectClass()[pri:1, instance:day4.ValidateParsedResponseBody@6069db50]" started-at="2026-05-10T20:27:01 IST" name="testJsonObjectClass" finished-at="2026-05-10T20:27:08 IST" duration-ms="6499" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLogsStatusCode -->
-        <test-method signature="testLogsAll()[pri:2, instance:day3.LoggingDemo@67c27493]" started-at="2026-04-27T21:55:04 IST" name="testLogsAll" finished-at="2026-04-27T21:55:04 IST" duration-ms="412" status="PASS">
+        </test-method> <!-- testJsonObjectClass -->
+        <test-method signature="testJsonResponseBody()[pri:1, instance:day4.ValidateParsedResponseBody@6069db50]" started-at="2026-05-10T20:27:08 IST" name="testJsonResponseBody" finished-at="2026-05-10T20:27:13 IST" duration-ms="4749" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLogsAll -->
-        <test-method signature="testLogsHeader()[pri:3, instance:day3.LoggingDemo@67c27493]" started-at="2026-04-27T21:55:04 IST" name="testLogsHeader" finished-at="2026-04-27T21:55:05 IST" duration-ms="310" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLogsHeader -->
-        <test-method signature="testLogsCookies()[pri:4, instance:day3.LoggingDemo@67c27493]" started-at="2026-04-27T21:55:05 IST" name="testLogsCookies" finished-at="2026-04-27T21:55:05 IST" duration-ms="224" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLogsCookies -->
-        <test-method signature="testLogsBody()[pri:5, instance:day3.LoggingDemo@67c27493]" started-at="2026-04-27T21:55:05 IST" name="testLogsBody" finished-at="2026-04-27T21:55:05 IST" duration-ms="550" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLogsBody -->
-      </class> <!-- day3.LoggingDemo -->
+        </test-method> <!-- testJsonResponseBody -->
+      </class> <!-- day4.ValidateParsedResponseBody -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

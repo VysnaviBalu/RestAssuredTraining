@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="day2.DiffWaysToCreatePostBodyRequest">
+      <class name="day4.ValidateParsedResponseBody">
         <methods>
-          <include name="deleteUser"/>
+          <include name="testJsonObjectClass"/>
           <include name="setup"/>
-          <include name="testPostUsingPOJOClass"/>
         </methods>
-      </class> <!-- day2.DiffWaysToCreatePostBodyRequest -->
+      </class> <!-- day4.ValidateParsedResponseBody -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
