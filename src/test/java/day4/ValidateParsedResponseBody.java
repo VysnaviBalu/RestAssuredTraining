@@ -30,25 +30,73 @@ public class ValidateParsedResponseBody extends BaseTest{
 	}
 	
 	@Test(priority=1)
-	void testJsonObjectClass() {
+	void testJsonObjectClass() throws Exception {
 		Response res = given()
 				        .contentType(ContentType.JSON)
 				       .when()
 				        .get("/store");
 		
 		JSONObject js = new JSONObject(res.asString()); // Converting response to JSON Object type
+		String bookTitle = null;
+		boolean findBook = false;
 		
 		for(String category : js.keySet()) {
-			System.out.println(category);
 			if(category.equalsIgnoreCase("book")) {
+				System.out.println(category);
 				for(int i = 0; i< js.getJSONArray(category).length();i++) {
-					System.out.println(js.getJSONArray(category).getJSONObject(i).getString("title"));
+					 bookTitle = js.getJSONArray(category).getJSONObject(i).getString("title");
+					if(bookTitle.equalsIgnoreCase("Harry Potter")){
+						findBook = true;
+						System.out.println("Harry Potter is present in the list");
+						break;
+						
+					}
+						
 				}
 			}
 		}
-
-	  
 		
 	}
+
+	  @Test(priority=1)
+	  void getTotalPriceOfAllBooks() {
+		  double totalPrice = 0;
+		  Response res = given()
+				       
+				         .when()
+				          .get("/store");
+		  JSONObject js = new JSONObject(res.asString());
+		  
+		   for(String category : js.keySet()) {
+			   if(category.equalsIgnoreCase("book")) {
+				   for(int i = 0; i < js.getJSONArray(category).length(); i++) {
+					   totalPrice = totalPrice + js.getJSONArray(category).getJSONObject(i).getDouble("price");
+				   }
+				   
+			   }
+		   }
+		   
+		   System.out.println("Total Price of the books: "+totalPrice);
+		  
+		  
+	  }
+	  
+	  @Test(priority=1)
+	  void getTotalPriceOfAllItems() {
+		  double totalPrice = 0;
+		  Response res = given()
+				       
+				         .when()
+				          .get("/store");
+		  JSONObject js = new JSONObject(res.asString());
+		  
+		   for(String category : js.keySet()) {
+				   for(int i = 0; i < js.getJSONArray(category).length(); i++) {
+					   totalPrice = totalPrice + js.getJSONArray(category).getJSONObject(i).getDouble("price");
+				   }			   
+		   }
+		   
+		   System.out.println("Total Price of All the Items: "+totalPrice);
+	  }
 
 }
