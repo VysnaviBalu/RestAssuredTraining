@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +103,12 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="day5.ParsedXMLResponseBody" class="method navigator-link" hash-for-method="getResponseFromXML">getResponseFromXML</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="day5.TestFileUploadDownload" class="method navigator-link" hash-for-method="downloadFile">downloadFile</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="day5.TestFileUploadDownload" class="method navigator-link" hash-for-method="uploadSingleFile">uploadSingleFile</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -121,14 +126,21 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">day5.ParsedXMLResponseBody</span>
+              <span class="class-name">day5.TestFileUploadDownload</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="getResponseFromXML">
-                  </a> <!-- getResponseFromXML -->
-                  <span class="method-name">getResponseFromXML</span>
+                  <a name="downloadFile">
+                  </a> <!-- downloadFile -->
+                  <span class="method-name">downloadFile</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="uploadSingleFile">
+                  </a> <!-- uploadSingleFile -->
+                  <span class="method-name">uploadSingleFile</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -136,7 +148,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/mv/31hqn5013_jd4t2jpptf4h5m0000gn/T/testng-eclipse--277225846/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/mv/31hqn5013_jd4t2jpptf4h5m0000gn/T/testng-eclipse--1934675282/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -145,7 +157,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;day5.ParsedXMLResponseBody&quot;/&gt;
+      &lt;class name=&quot;day5.TestFileUploadDownload&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -185,16 +197,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'getResponseFromXML')
-data.setCell(0, 2, 'day5.ParsedXMLResponseBody')
-data.setCell(0, 3, 6696);
+data.setCell(0, 1, 'uploadSingleFile')
+data.setCell(0, 2, 'day5.TestFileUploadDownload')
+data.setCell(0, 3, 3919);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'downloadFile')
+data.setCell(1, 2, 'day5.TestFileUploadDownload')
+data.setCell(1, 3, 181);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -220,14 +236,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">day5.ParsedXMLResponseBody</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">day5.TestFileUploadDownload</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">getResponseFromXML</span>
-                <span class="method-start">1519 ms</span>
+                <span class="method-name">uploadSingleFile</span>
+                <span class="method-start">1290 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">downloadFile</span>
+                <span class="method-start">5271 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

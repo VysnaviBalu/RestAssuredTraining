@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="day5.ParsedXMLResponseBody">
+      <class name="day5.TestFileUploadDownload">
         <methods>
-          <include name="getResponseFromXML"/>
+          <include name="downloadFile"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- day5.ParsedXMLResponseBody -->
+      </class> <!-- day5.TestFileUploadDownload -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
