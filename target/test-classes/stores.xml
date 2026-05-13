@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<store>
+
+    <books>
+        <book>
+            <author>Nigel Rees</author>
+            <category>reference</category>
+            <price>150.5</price>
+            <title>Sayings of the Century</title>
+        </book>
+        <book>
+            <author>Evelyn Waugh</author>
+            <category>fiction</category>
+            <price>100</price>
+            <title>Sword of Honour</title>
+        </book>
+        <book>
+            <author>Herman Melville</author>
+            <category>fiction</category>
+            <price>200</price>
+            <title>Moby Dick</title>
+        </book>
+        <book>
+            <author>J.R.R Tolkien</author>
+            <category>fantasy</category>
+            <price>350</price>
+            <title>The Lord of the Rings</title>
+        </book>
+        <book>
+            <author>J.K Rowling</author>
+            <category>fantasy</category>
+            <price>300</price>
+            <title>Harry Potter</title>
+        </book>
+        <book>
+            <author>George Orwell</author>
+            <category>fiction</category>
+            <price>180</price>
+            <title>1984</title>
+        </book>
+        <book>
+            <author>F. Scott Fitzgerald</author>
+            <category>fiction</category>
+            <price>120</price>
+            <title>The Great Gatsby</title>
+        </book>
+    </books>
+
+    <greetingCards>
+        <greetingCard>
+            <occasion>Birthday</occasion>
+            <brand>Hallmark</brand>
+            <price>50</price>
+        </greetingCard>
+        <greetingCard>
+            <occasion>Wedding</occasion>
+            <brand>Archies</brand>
+            <price>75</price>
+        </greetingCard>
+        <greetingCard>
+            <occasion>Anniversary</occasion>
+            <brand>Hallmark</brand>
+            <price>60</price>
+        </greetingCard>
+        <greetingCard>
+            <occasion>Christmas</occasion>
+            <brand>Archies</brand>
+            <price>45</price>
+        </greetingCard>
+        <greetingCard>
+            <occasion>Graduation</occasion>
+            <brand>American Greetings</brand>
+            <price>55</price>
+        </greetingCard>
+        <greetingCard>
+            <occasion>Baby Shower</occasion>
+            <brand>Hallmark</brand>
+            <price>65</price>
+        </greetingCard>
+    </greetingCards>
+
+    <journals>
+        <journal>
+            <type>Dotted</type>
+            <brand>Leuchtturm</brand>
+            <price>300</price>
+        </journal>
+        <journal>
+            <type>Lined</type>
+            <brand>Moleskine</brand>
+            <price>250</price>
+        </journal>
+        <journal>
+            <type>Blank</type>
+            <brand>Paperblanks</brand>
+            <price>280</price>
+        </journal>
+        <journal>
+            <type>Grid</type>
+            <brand>Leuchtturm</brand>
+            <price>320</price>
+        </journal>
+        <journal>
+            <type>Bullet</type>
+            <brand>Rhodia</brand>
+            <price>220</price>
+        </journal>
+        <journal>
+            <type>Traveler</type>
+            <brand>Midori</brand>
+            <price>400</price>
+        </journal>
+    </journals>
+
+    <pens>
+        <pen>
+            <type>Ballpoint</type>
+            <brand>Parker</brand>
+            <price>120</price>
+        </pen>
+        <pen>
+            <type>Fountain</type>
+            <brand>Pilot</brand>
+            <price>200</price>
+        </pen>
+        <pen>
+            <type>Gel</type>
+            <brand>Uniball</brand>
+            <price>80</price>
+        </pen>
+        <pen>
+            <type>Rollerball</type>
+            <brand>Lamy</brand>
+            <price>350</price>
+        </pen>
+        <pen>
+            <type>Fineliner</type>
+            <brand>Staedtler</brand>
+            <price>60</price>
+        </pen>
+        <pen>
+            <type>Marker</type>
+            <brand>Copic</brand>
+            <price>500</price>
+        </pen>
+    </pens>
+
+</store>
