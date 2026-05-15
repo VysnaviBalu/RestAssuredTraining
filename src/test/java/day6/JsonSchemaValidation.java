@@ -12,8 +12,6 @@ public class JsonSchemaValidation extends BaseJSONTest{
 
 	@Test
 	void validateJsonSchemaUsingClassPath() {
-	
-		
 		               given()
 				
 				       .when()
