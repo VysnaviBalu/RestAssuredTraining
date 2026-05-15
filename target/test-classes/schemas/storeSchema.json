@@ -1,0 +1,110 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Welcome3",
+    "definitions": {
+        "Welcome3": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "book": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Book"
+                    }
+                },
+                "greetingCards": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/GreetingCard"
+                    }
+                },
+                "journals": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Journal"
+                    }
+                },
+                "pens": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Journal"
+                    }
+                }
+            },
+            "required": [
+                "book",
+                "greetingCards",
+                "journals",
+                "pens"
+            ],
+            "title": "Welcome3"
+        },
+        "Book": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "author": {
+                    "type": "string"
+                },
+                "category": {
+                    "type": "string"
+                },
+                "price": {
+                    "type": "number"
+                },
+                "title": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "author",
+                "category",
+                "price",
+                "title"
+            ],
+            "title": "Book"
+        },
+        "GreetingCard": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "occasion": {
+                    "type": "string"
+                },
+                "brand": {
+                    "type": "string"
+                },
+                "price": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "brand",
+                "occasion",
+                "price"
+            ],
+            "title": "GreetingCard"
+        },
+        "Journal": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "type": {
+                    "type": "string"
+                },
+                "brand": {
+                    "type": "string"
+                },
+                "price": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "brand",
+                "price",
+                "type"
+            ],
+            "title": "Journal"
+        }
+    }
+}
