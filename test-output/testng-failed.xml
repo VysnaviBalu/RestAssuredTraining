@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="day7.ArraysInRestAssured">
+      <class name="day8.UpdateUser">
         <methods>
+          <include name="testUpdateUser"/>
           <include name="setup"/>
-          <include name="testArrayAsQueryParamCommaSeparated"/>
+          <include name="createUserData"/>
         </methods>
-      </class> <!-- day7.ArraysInRestAssured -->
+      </class> <!-- day8.UpdateUser -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
