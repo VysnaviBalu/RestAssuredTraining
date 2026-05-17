@@ -49,7 +49,6 @@ public class AuthenticationsFlow {
 		 .log().all();
 	}
 	
-	
     
 	@Test 
 	void testBearerToken() {

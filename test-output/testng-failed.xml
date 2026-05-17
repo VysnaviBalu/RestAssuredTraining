@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="day7.AuthenticationsFlow">
+      <class name="day7.ArraysInRestAssured">
         <methods>
-          <include name="testBearerToken"/>
-          <include name="testAPIKeyAuthenticationAsQueryParam"/>
+          <include name="setup"/>
+          <include name="testArrayAsQueryParamCommaSeparated"/>
         </methods>
-      </class> <!-- day7.AuthenticationsFlow -->
+      </class> <!-- day7.ArraysInRestAssured -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

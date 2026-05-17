@@ -49,6 +49,7 @@
      <artifactId>json</artifactId>
      <version>20240303</version>
     </dependency>
+    
 
     <!-- Jackson Databind -->
     <dependency>
@@ -71,6 +72,14 @@
      <artifactId>opencsv</artifactId>
      <version>5.9</version>
   </dependency>
+  
+    <!-- Faker Data Generator -->
+  
+  <dependency>
+    <groupId>com.github.javafaker</groupId>
+    <artifactId>javafaker</artifactId>
+    <version>1.0.2</version>
+</dependency>
 
   </dependencies>
 

@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,17 +103,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="day7.AuthenticationsFlow" class="method navigator-link" hash-for-method="testAPIKeyAuthenticationAsQueryParam">testAPIKeyAuthenticationAsQueryParam</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="day7.AuthenticationsFlow" class="method navigator-link" hash-for-method="testBearerToken">testBearerToken</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="day7.AuthenticationsFlow" class="method navigator-link" hash-for-method="testDigestAuthentication">testDigestAuthentication</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="day7.FakerDataGenerator" class="method navigator-link" hash-for-method="testGenerateDummyData">testGenerateDummyData</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -131,28 +121,14 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">day7.AuthenticationsFlow</span>
+              <span class="class-name">day7.FakerDataGenerator</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testAPIKeyAuthenticationAsQueryParam">
-                  </a> <!-- testAPIKeyAuthenticationAsQueryParam -->
-                  <span class="method-name">testAPIKeyAuthenticationAsQueryParam</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testBearerToken">
-                  </a> <!-- testBearerToken -->
-                  <span class="method-name">testBearerToken</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testDigestAuthentication">
-                  </a> <!-- testDigestAuthentication -->
-                  <span class="method-name">testDigestAuthentication</span>
+                  <a name="testGenerateDummyData">
+                  </a> <!-- testGenerateDummyData -->
+                  <span class="method-name">testGenerateDummyData</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -160,7 +136,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/mv/31hqn5013_jd4t2jpptf4h5m0000gn/T/testng-eclipse-2020367188/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/mv/31hqn5013_jd4t2jpptf4h5m0000gn/T/testng-eclipse--468196765/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -169,7 +145,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;day7.AuthenticationsFlow&quot;/&gt;
+      &lt;class name=&quot;day7.FakerDataGenerator&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -209,24 +185,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testAPIKeyAuthenticationAsQueryParam')
-data.setCell(0, 2, 'day7.AuthenticationsFlow')
-data.setCell(0, 3, 4920);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testDigestAuthentication')
-data.setCell(1, 2, 'day7.AuthenticationsFlow')
-data.setCell(1, 3, 2365);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testBearerToken')
-data.setCell(2, 2, 'day7.AuthenticationsFlow')
-data.setCell(2, 3, 649);
+data.setCell(0, 1, 'testGenerateDummyData')
+data.setCell(0, 2, 'day7.FakerDataGenerator')
+data.setCell(0, 3, 1083);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -252,18 +220,10 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">day7.AuthenticationsFlow</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">day7.FakerDataGenerator</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">testAPIKeyAuthenticationAsQueryParam</span>
+                <span class="method-name">testGenerateDummyData</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testBearerToken</span>
-                <span class="method-start">4931 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testDigestAuthentication</span>
-                <span class="method-start">5583 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
