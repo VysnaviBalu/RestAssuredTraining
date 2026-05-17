@@ -2,6 +2,8 @@ package day8;
 
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
+
+import org.testng.ITestContext;
 import org.testng.annotations.*;
 import io.restassured.http.ContentType;
 import org.json.JSONObject;
@@ -11,22 +13,14 @@ import io.restassured.response.*;
 
 public class UpdateUser extends BaseTest{
 	
-	CreateUser cu = new CreateUser();
-	
-	String name , email;
 	
 	
-	@Test
-	void createUserData() {
-		cu.testCreateUser();
-		System.out.println("The original name: " +cu.name);
-		System.out.println("The original email: "+cu.email);
-	}
-	
-	@Test(dependsOnMethods= {"createUserData"})
-	void testUpdateUser() {
+	@Test(dependsOnGroups = {"create"})
+	void testUpdateUser(ITestContext context) {
 		
 		System.out.println("******* Update User *******");
+		
+		 int userID = (int) context.getAttribute("id");
 
 	    JSONObject jo = new JSONObject();
 	    jo.put("name", faker.name().firstName());
@@ -37,17 +31,18 @@ public class UpdateUser extends BaseTest{
 	     .contentType(ContentType.JSON)
 	     .body(jo.toString())
 	    .when()
-	     .put("/users/" + cu.userID)
+	     .put("/users/" + userID)
 	    .then()
 	     .statusCode(200)
 	     .extract()
 	     .response();
 
-	    String updatedName = updateData.jsonPath().getString("name");
-	    String updatedEmail = updateData.jsonPath().getString("email");
+	 // Update context with new values
+        context.setAttribute("userName", updateData.jsonPath().getString("name"));
+        context.setAttribute("userEmail", updateData.jsonPath().getString("email"));
 
-	    System.out.println("The updated name: " + updatedName);
-	    System.out.println("The updated email: " + updatedEmail);
+        System.out.println("Updated Name: " + context.getAttribute("userName"));
+        System.out.println("Updated Email: " + context.getAttribute("userEmail"));
 	}
 	
 

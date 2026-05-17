@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="API Chaining Suite" verbose="1">
+    <test name="CRUD Operations">
+        <classes>
+            <class name="day8.CreateUser"/>
+            <class name="day8.GetUser"/>
+            <class name="day8.UpdateUser"/>
+            <class name="day8.DeleteUser"/>
+        </classes>
+    </test>
+</suite>
