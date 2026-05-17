@@ -1,0 +1,17 @@
+# Environment files
+.env
+*.env
+
+# IDE files
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+
+# Build output
+target/
+*.class
+
+# Mac files
+.DS_Store

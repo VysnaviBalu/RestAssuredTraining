@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="day5.TestFileUploadDownload">
+      <class name="day7.AuthenticationsFlow">
         <methods>
-          <include name="downloadFile"/>
-          <include name="setup"/>
+          <include name="testBearerToken"/>
+          <include name="testAPIKeyAuthenticationAsQueryParam"/>
         </methods>
-      </class> <!-- day5.TestFileUploadDownload -->
+      </class> <!-- day7.AuthenticationsFlow -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

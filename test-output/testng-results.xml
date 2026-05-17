@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-15T20:01:00 IST" name="Default suite" finished-at="2026-05-15T20:01:02 IST" duration-ms="1426">
+  <suite started-at="2026-05-17T16:27:08 IST" name="Default suite" finished-at="2026-05-17T16:27:16 IST" duration-ms="8075">
     <groups>
     </groups>
-    <test started-at="2026-05-15T20:01:00 IST" name="Default test" finished-at="2026-05-15T20:01:02 IST" duration-ms="1426">
-      <class name="day6.SerializationDeserialization">
-        <test-method signature="convertJsonToPojo()[pri:0, instance:day6.SerializationDeserialization@359f7cdf]" started-at="2026-05-15T20:01:00 IST" name="convertJsonToPojo" finished-at="2026-05-15T20:01:02 IST" duration-ms="1103" status="PASS">
+    <test started-at="2026-05-17T16:27:08 IST" name="Default test" finished-at="2026-05-17T16:27:16 IST" duration-ms="8075">
+      <class name="day7.AuthenticationsFlow">
+        <test-method signature="testAPIKeyAuthenticationAsQueryParam()[pri:0, instance:day7.AuthenticationsFlow@44ebcd03]" started-at="2026-05-17T16:27:08 IST" name="testAPIKeyAuthenticationAsQueryParam" finished-at="2026-05-17T16:27:13 IST" duration-ms="4920" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- convertJsonToPojo -->
-        <test-method signature="convertPojoToJson()[pri:0, instance:day6.SerializationDeserialization@359f7cdf]" started-at="2026-05-15T20:01:02 IST" name="convertPojoToJson" finished-at="2026-05-15T20:01:02 IST" duration-ms="76" status="PASS">
+        </test-method> <!-- testAPIKeyAuthenticationAsQueryParam -->
+        <test-method signature="testBearerToken()[pri:0, instance:day7.AuthenticationsFlow@44ebcd03]" started-at="2026-05-17T16:27:13 IST" name="testBearerToken" finished-at="2026-05-17T16:27:14 IST" duration-ms="649" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- convertPojoToJson -->
-      </class> <!-- day6.SerializationDeserialization -->
+        </test-method> <!-- testBearerToken -->
+        <test-method signature="testDigestAuthentication()[pri:0, instance:day7.AuthenticationsFlow@44ebcd03]" started-at="2026-05-17T16:27:14 IST" name="testDigestAuthentication" finished-at="2026-05-17T16:27:16 IST" duration-ms="2365" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDigestAuthentication -->
+      </class> <!-- day7.AuthenticationsFlow -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
